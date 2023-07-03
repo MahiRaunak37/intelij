@@ -37,7 +37,6 @@ public class PattenMatcherInDataBase {
                     arrayList.add(i,'\\');
                     System.out.println("i and j "+ i+" "+j);
                 }
-
             }
 
         }
