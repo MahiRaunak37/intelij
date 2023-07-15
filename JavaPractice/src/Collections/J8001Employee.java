@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class J8001Employee {
@@ -37,5 +38,11 @@ public class J8001Employee {
 
         for(J8001Employee employee:list)
             System.out.println(employee.getEmpName());
+
+        Iterator<J8001Employee> iterator = list.iterator();
+        while(iterator.hasNext())
+        {
+            System.out.println(iterator.next().getEmpName());
+        }
     }
 }
