@@ -38,9 +38,14 @@ public class J3000StartingProgram {
             List<String> files = findFiles(Paths.get("P:\\Intelij\\JavaPractice\\src\\Collections"), "java");
             //List<String> files = findFiles(Paths.get(System.getProperty("user.dir")), "java");
             int fileSize = files.size();
+            /*
+                For collection 3001 t0 3499
+                For Java 8 Feature 3500 to 3699
+                For JavaExercise 5000 to 5999
+                 */
             fileSize = fileSize +3001;
             System.out.println("Java Files Number:- "+fileSize);
-            if(files.size()<5000){
+            if(files.size()<3500){
                 nameGeneration(fileSize);
             }
             else{
