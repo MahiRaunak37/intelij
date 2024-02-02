@@ -13,7 +13,7 @@ public class J3000StartingProgram {
 
     //Start for Total files count
     public static void totalFiles(){
-        File directory = new File("P:\\Intelij\\JavaPractice\\src\\Collections");
+        File directory = new File("P:\\Intelij\\JavaPractice\\src\\JavaExercise");
         //File directory = new File(System.getProperty("user.dir"));
         int fileCount = countFilesInCurrentDirectory(directory);
         System.out.println("Number of Files:- " + fileCount);
@@ -35,7 +35,7 @@ public class J3000StartingProgram {
     public static void javaFileCount(){
         try {
 
-            List<String> files = findFiles(Paths.get("P:\\Intelij\\JavaPractice\\src\\Collections"), "java");
+            List<String> files = findFiles(Paths.get("P:\\Intelij\\JavaPractice\\src\\JavaExercise"), "java");
             //List<String> files = findFiles(Paths.get(System.getProperty("user.dir")), "java");
             int fileSize = files.size();
             /*
@@ -89,7 +89,7 @@ public class J3000StartingProgram {
         String fileName = scanner.next();
 
         try {
-            File myObj = new File("P:\\Intelij\\JavaPractice\\src\\Collections\\"+"J"+name+fileName+".java");
+            File myObj = new File("P:\\Intelij\\JavaPractice\\src\\JavaExercise\\"+"J"+name+fileName+".java");
             if (myObj.createNewFile()) {
                 System.out.println("File created: " + myObj.getName());
             } else {
